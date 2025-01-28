@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reconnaissance de Vêtements</title>
+  <link rel="stylesheet" href="./static/style/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reconnaissance de Vêtements</h1>
+    <div class="upload-section">
+      <label for="imageInput">Télécharger une image :</label>
+      <input type="file" id="imageInput" accept="image/*">
+    </div>
+    <div class="result-section">
+      <h2>Résultat :</h2>
+      <canvas id="outputCanvas"></canvas>
+      <p id="prediction">Aucune prédiction pour le moment</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+  <script src="./static/scripts/app.js"></script>
+</body>
+</html>
